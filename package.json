@@ -1,6 +1,6 @@
 {
 	"name": "@basitcodeenv/template-matcher",
-	"version": "2.1.1",
+	"version": "2.3.0",
 	"main": "dist/index",
 	"typings": "dist/index",
 	"description": "Locate images on your screen using template matching in nut.js",
@@ -41,11 +41,10 @@
 		"compile": "npm run clean && tsc -p .",
 		"test": "jest --runInBand",
 		"publish-next": "npm publish --tag next",
-		"prepublishOnly": "npm run compile",
-		"opencv-build": "build-opencv --nobuild rebuild"
+		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@u4/opencv4nodejs": "6.5.2"
+		"opencv4nodejs-prebuilt-install": "^4.1.202"
 	},
 	"devDependencies": {
 		"@nut-tree/nut-js": "^3.1.2",
